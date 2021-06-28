@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2.6rem;
+  background-color: rgba(255, 255, 255, 0);
+
+  &-logo {
+    font-family: $logo;
+    color: $blue;
+    font-size: 3rem;
+
+    @media (min-width: 780px) {
+      border: 1px solid #707070;
+      text-align: center;
+      font-size: 1.8rem;
+      padding: .6rem 0;
+      margin-top: .4rem;
+    }
+
+    &-main {
+      color: $blue;
+
+    }
+  }
+
+  &-mail {
+      width: 50%;
+    
+
+      a {
+        padding: 1rem;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100px;
+
+        @media (min-width: 780px) {
+          padding: 1.6rem;
+          max-width: 220px;
+
+        }
+      }
+
+    &-txt {
+      font-weight: normal;
+      text-shadow: 2px 2px 0 $black;
+      margin-right: 1rem;
+    }
+
+    .mail-icon {
+      color: $white;
+      font-size: 2.4rem;
+    }
+  }
+}

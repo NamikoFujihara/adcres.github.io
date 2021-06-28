@@ -1,0 +1,102 @@
+.coaching {
+  background: $gray;
+  padding: 5rem 0;
+
+  @media (min-width:768px) {
+    padding: 10rem 0;
+  }
+
+  &-inner {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &-head {
+    text-align: center;
+
+    &-txt {
+      font-weight: bold;
+      position: relative;
+
+      @media (min-width:768px) {
+
+        .txtm {
+          font-size: 2.8rem;
+        }
+      }
+
+     .txtm::before {
+       @media (min-width:780px) {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        width: 7px;
+        height: 80px;
+        left: 100px;
+        background: $white;
+        transform: rotate(-30deg);
+        }
+      }
+
+      .txtm::after {
+        @media (min-width:780px) {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        width: 7px;
+        height: 80px;
+        right: 100px;
+        background: $white;
+        transform: rotate(30deg);
+        }
+      }
+    }
+
+    &-logo {
+      margin: 2rem 0;
+
+      @media (min-width:768px) {
+        margin: 3.4rem 0;
+      }
+      
+      .txtxl {
+        font-size: 8rem;
+        color: $blue;
+        font-family: $logo;
+  
+      }
+    }
+
+    .suggestion {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      @media (min-width:768px) {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &-movie {
+    @media (min-width:768px) {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+  
+    &-box {
+      margin-top: 2rem;
+      border: 1px solid #707070;
+      width: 100%;
+      height: 200px;
+      background: $white;
+
+      @media (min-width:768px) {
+        width: 48%;
+        height: 350px;
+      }
+
+      
+    }
+  }
+}
